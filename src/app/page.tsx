@@ -11,8 +11,6 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <AboutSection />
-          <SkillsetSlider />
           <ProjectsSlider />
           <Experience />
           <Contact />

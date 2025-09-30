@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tarun",
+  title: "Hi, I'm Tarun",
   description: "My Portfolio",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 dark:bg-background-dark font-display text-white dark:text-text-dark`}
       >
         <div className="flex flex-col min-h-screen">
           <Navbar />

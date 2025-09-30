@@ -1,7 +1,6 @@
 export default function SkillsetSlider() {
   return (
     <section className="py-16" id="skills">
-      <h2 className="text-3xl font-bold text-center mb-12">My Skillset</h2>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="bg-primary/10 dark:bg-primary/20 text-text-light dark:text-text-dark font-medium py-2 px-4 rounded-full">
           React

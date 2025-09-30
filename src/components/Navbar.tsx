@@ -1,71 +1,52 @@
+import { LayoutTemplate } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-2xl bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-2xl border-b-[#ffc300] border-b-1 ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-20 border-b border-primary/20">
           <div className="flex items-center gap-3">
-            <Link href="/">
-              <svg
-                className="h-8 w-8 text-accent text-[#ffc300]"
-                fill="none"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2L2 7L12 12L22 7L12 2Z"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></path>
-                <path
-                  d="M2 17L12 22L22 17"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></path>
-                <path
-                  d="M2 12L12 17L22 12"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></path>
-              </svg>
+            <Link href="/" className="flex gap-2 justify-center items-center">
+              <LayoutTemplate size={40} className=" text-[#ffc300]" />
+              <span className="text-[#ffc300+]">Web Developer</span>
             </Link>
             <h1 className="text-2xl font-bold tracking-tight"></h1>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <Link
-              className="text-sm font-medium hover:text-accent transition-colors hover:text-[#ffc300]"
-              href="#about"
-            >
-              About
-            </Link>
-            <Link
-              className="text-sm font-medium hover:text-accent transition-colors hover:text-[#ffc300]"
+              className="text-sm font-medium  transition-colors hover:text-[#ffc300] after:content-['']"
               href="/projects"
             >
               Projects
             </Link>
             <Link
-              className="text-sm font-medium hover:text-accent transition-colors hover:text-[#ffc300]"
+              className="text-sm font-medium  transition-colors hover:text-[#ffc300]"
               href="#skills"
             >
-              Skills
+              Blog
             </Link>
             <Link
-              className="text-sm font-medium hover:text-accent transition-colors hover:text-[#ffc300]"
+              className="text-sm font-medium  transition-colors hover:text-[#ffc300]"
+              href="#contact"
+            >
+              Showcase
+            </Link>
+            <Link
+              className="text-sm font-medium  transition-colors hover:text-[#ffc300]"
+              href="#contact"
+            >
+              Guestbook
+            </Link>
+            <Link
+              className="text-sm font-medium  transition-colors hover:text-[#ffc300]"
               href="#contact"
             >
               Contact
             </Link>
             <div className="flex items-center gap-4">
               <Link
-                className="text-subtext-dark hover:text-accent transition-colors hover:text-[#ffc300]"
+                className="text-subtext-dark  transition-colors hover:text-[#ffc300]"
                 href="https://github.com/t123arun"
                 target="blank"
               >
@@ -80,7 +61,7 @@ export default function Navbar() {
                 </svg>
               </Link>
               <Link
-                className="text-subtext-dark hover:text-accent transition-colors hover:text-[#ffc300]"
+                className="text-subtext-dark  transition-colors hover:text-[#ffc300]"
                 href="https://www.linkedin.com/in/tarun-kamboj-21a33a156/"
                 target="blank"
               >
