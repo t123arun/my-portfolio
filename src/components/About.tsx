@@ -4,15 +4,12 @@ export default function AboutSection() {
       <div className="grid md:grid-cols-5 gap-12 items-center">
         <div className="md:col-span-2">
           <div className="relative">
-            {/* Screen */}
             <div className="w-80 h-48 bg-gray-900 rounded-t-lg border-4 border-[#ffc300] flex items-center justify-center mx-auto">
-              <span className="text-4xl text-[#ffc300]">{"</>"}</span>
+              <span className="text-4xl text-[#ffc300]">&lt;/&gt;</span>
             </div>
 
-            {/* Base */}
             <div className="w-96 h-6 bg-gray-700 rounded-b-lg mx-auto"></div>
 
-            {/* Bottom Stand */}
             <div className="w-[420px] h-2 bg-gray-600 rounded-b-xl mx-auto border-4 border-[#ffc300]"></div>
           </div>
         </div>
